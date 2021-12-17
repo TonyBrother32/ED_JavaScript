@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function plus (a, b) {
+    		return a + b;
+		}
+
+		function minus (a, b) {
+    		return a - b;
+		}
+
+		function div (a, b) {
+    		return a / b;
+		}
+
+		function mult (a, b) {
+    		return a * b;
+		}
+
+        function mathOperation(a, b, operation){
+                switch(operation){
+                    case 1:
+                        return plus(a, b);
+                        break;
+                    case 2:
+                        return minus(a, b);
+                        break;
+                    case 3:
+                        return div(a, b);
+                        break;
+                    case 4:
+                        return mult(a, b);
+                        break;
+                }
+        }
+
+        var num1 = Number(prompt ("Введите число a: "))
+        var num2 = Number(prompt ("Введите число b: "))
+        var action = Number(prompt("Введите порядковый номер операции: 1.Сложение 2.Вычитание 3.Деление 4.Умножение : "))
+
+        result = mathOperation(num1, num2, action)
+        alert (result)
+
+
+    </script>
+</body>
+</html>
