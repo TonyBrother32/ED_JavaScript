@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+var cpu = {
+   model: "AMD",
+   year: 2019,
+   count: 1,
+   price: 15000
+};
+
+var memory = {
+   model: "KINGSTON",
+   year: 2019,
+   count: 2,
+   price: 13000
+};
+
+var gpu = {
+   model: "ASUS",
+   year: 2019,
+   count: 1,
+   price: 33000
+};
+
+
+countCartPrice = cpu.count*cpu.price + memory.count*memory.price + gpu.count*gpu.price
+console.log(countCartPrice)
+    
+
+
+    </script>
+</body>
+</html>
